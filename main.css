@@ -1,3 +1,13 @@
+/* Available Google Fonts */
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+/* End Google Fonts */
+
 /* palette start */
 .dark-primary-color    { background: #512DA8; }
 .default-primary-color { background: #673AB7; }
@@ -33,6 +43,7 @@ body {
   justify-content: center;
   flex: 1 0 25%;
   background: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .card h2 {
@@ -61,12 +72,15 @@ body {
   color: #673AB7;
   width: calc(100% + 30px);
   margin-left: -15px;
+  font-family: 'Roboto', sans-serif; 
 }
 
 .block2-specs p {
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .block3-pricing p {
   font-weight: bold;
+  font-family: 'Raleway', sans-serif;
 }

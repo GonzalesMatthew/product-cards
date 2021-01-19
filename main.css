@@ -35,6 +35,8 @@ font-family: 'Roboto', sans-serif;
 }
 /* palette end */
 
+
+
 /* classes */
 body {
   background-color: peru;
@@ -123,3 +125,25 @@ body {
   font-weight: bold;
   font-family: "Raleway", sans-serif;
 }
+/* classes end */
+
+
+/* Media Query start */
+@media screen and (max-width: 850px) {
+  div {
+    background: tomato;
+  }
+  .text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  div {
+    background: orange;
+  }
+  .text {
+    font-size: 16px;
+  }
+}
+/* Media Query end */

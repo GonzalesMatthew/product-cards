@@ -9,14 +9,30 @@ font-family: 'Roboto', sans-serif;
 /* End Google Fonts */
 
 /* palette start */
-.dark-primary-color    { background: #512DA8; }
-.default-primary-color { background: #673AB7; }
-.light-primary-color   { background: #D1C4E9; }
-.text-primary-color    { color: #FFFFFF; }
-.accent-color          { background: #8BC34A; }
-.primary-text-color    { color: #212121; }
-.secondary-text-color  { color: #757575; }
-.divider-color         { border-color: #BDBDBD; }
+.dark-primary-color {
+  background: #512da8;
+}
+.default-primary-color {
+  background: #673ab7;
+}
+.light-primary-color {
+  background: #d1c4e9;
+}
+.text-primary-color {
+  color: #ffffff;
+}
+.accent-color {
+  background: #8bc34a;
+}
+.primary-text-color {
+  color: #212121;
+}
+.secondary-text-color {
+  color: #757575;
+}
+.divider-color {
+  border-color: #bdbdbd;
+}
 /* palette end */
 
 /* classes */
@@ -29,7 +45,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: #512DA8; 
+  background: #512da8;
   color: #212121;
 }
 
@@ -42,25 +58,48 @@ body {
   width: 250px;
   justify-content: center;
   flex: 1 0 25%;
-  background: #FFFFFF;
-  font-family: 'Montserrat', sans-serif;
+  background: #ffffff;
+  font-family: "Montserrat", sans-serif;
 }
 
 .card h2 {
   border: 1px solid lightblue;
   text-align: center;
-  background: #8BC34A;
-  border-color: #BDBDBD; 
+  background: #8bc34a;
+  border-color: #bdbdbd;
 }
 
-.card img {
+/* Target card image directly */
+.product-image-stack img {
   height: 200px;
   width: 200px;
   border: 1px solid silver;
   padding: 5px;
-  display: block;
+}
+
+.product-image-stack {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+}
+
+.product-image {
+  grid-column: 1;
+  grid-row: 1;
   margin-left: auto;
   margin-right: auto;
+}
+
+.sold-out-image {
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sold-out-image img {
+  height: 100px;
+  width: 100px;
+  margin-top: 50px;
 }
 
 .card p {
@@ -68,19 +107,19 @@ body {
 }
 
 .product-availability {
-  background-color: #BDBDBD;
-  color: #673AB7;
+  background-color: #bdbdbd;
+  color: #673ab7;
   width: calc(100% + 30px);
   margin-left: -15px;
-  font-family: 'Roboto', sans-serif; 
+  font-family: "Roboto", sans-serif;
 }
 
 .block2-specs p {
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .block3-pricing p {
   font-weight: bold;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
